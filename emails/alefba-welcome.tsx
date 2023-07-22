@@ -19,7 +19,7 @@ import * as React from "react";
 
 const developementMode = false;
 
-const baseUrl = developementMode ? "https://alefba-ocr.ir/assets/" : "/static/";
+const baseUrl = developementMode ? "/static/" : "https://alefba-ocr.ir/assets/";
 
 const HeaderImage = () => (
   <Section className="px-[40px] pt-[74px]">
