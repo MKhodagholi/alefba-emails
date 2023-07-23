@@ -27,7 +27,7 @@ const HeaderImage = () => (
       <Img
         src={`${baseUrl}header-image.png`}
         alt=""
-        className="w-full h-[200px] my-0 mx-auto bg-black rounded-[10px]"
+        className="w-full h-[200px] my-0 mx-auto rounded-[10px]"
       />
       <Img
         src={`${baseUrl}roshan-logo.png`}
@@ -39,7 +39,7 @@ const HeaderImage = () => (
 );
 
 const BodyContent = () => (
-  <Section className="absolute top-[220px] px-[65px] bg-transparent">
+  <Section className="py-[45px] px-[65px] pb-[115px] bg-transparent">
     <Section className="px-[40px] bg-white rounded-[5px]">
       <Heading className="text-black text-2xl font-normal text-right p-0 my-[30px] mx-0">
         خوش آمدید!
@@ -77,22 +77,24 @@ const Footer = () => (
     <Text className="text-[#7E7E7E] text-xs m-2">
       تهران، میدان ولیعصر، بلوار کریمخان، خیابان به آفرین، پلاک 30{" "}
     </Text>
-    <Section className="w-[220px]">
-      <Column>
-        <Text className="text-[#7E7E7E] m-0 text-xs" dir="ltr">
-          +98 21 88943638
-        </Text>
-      </Column>
-      <Column className="text-[#7E7E7E] m-0" dir="ltr">
-        |
-      </Column>
-      <Column>
-        <Text className="text-[#7E7E7E] m-0 text-xs" dir="ltr">
-          +98 21 88908710
-        </Text>
-      </Column>
+    <Section className="w-full bg-black">
+      <Row className="w-[220px]">
+        <Column>
+          <Text className="text-[#7E7E7E] m-0 text-xs" dir="ltr">
+            +98 21 88943638
+          </Text>
+        </Column>
+        <Column className="text-[#7E7E7E] m-0" dir="ltr">
+          |
+        </Column>
+        <Column>
+          <Text className="text-[#7E7E7E] m-0 text-xs" dir="ltr">
+            +98 21 88908710
+          </Text>
+        </Column>
+      </Row>
     </Section>
-    <Section className="bg-black pb-6">
+    <Section className="w-full bg-black pb-6">
       <Row className="w-[100px] mt-1">
         <Column align="center">
           <Link href="#instagram">
@@ -137,13 +139,10 @@ export const AlefbaEmail = () => {
       <Head />
       <Preview>پیام خوش آمدگویی تیم الفبا به کاربران محترم الفبا</Preview>
       <Tailwind>
-        <Body className="bg-white my-auto mx-auto font-sans">
+        <Body className="my-auto mx-auto font-sans bg-[#FCFCFC]">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto w-[620px]">
-            <Section className="relative">
-              <HeaderImage />
-              <BodyContent />
-            </Section>
-            <Section className="h-[400px]" />
+            <HeaderImage />
+            <BodyContent />
             <Footer />
           </Container>
         </Body>
