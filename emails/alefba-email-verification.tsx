@@ -29,7 +29,7 @@ const HeaderImage = () => (
 );
 
 const BodyContent = () => (
-  <Section className="px-[65px] -translate-y-[45px] bg-transparent">
+  <Section className="px-[65px] bg-transparent">
     <Section className="px-[40px] bg-white rounded-[5px]">
       <Heading className="text-black text-2xl font-normal text-right p-0 my-[30px] mx-0">
         خوش آمدید!

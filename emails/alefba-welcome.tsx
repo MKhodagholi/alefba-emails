@@ -39,7 +39,7 @@ const HeaderImage = () => (
 );
 
 const BodyContent = () => (
-  <Section className="px-[65px] -translate-y-[45px] bg-transparent">
+  <Section className="absolute top-[220px] px-[65px] bg-transparent">
     <Section className="px-[40px] bg-white rounded-[5px]">
       <Heading className="text-black text-2xl font-normal text-right p-0 my-[30px] mx-0">
         خوش آمدید!
@@ -47,17 +47,17 @@ const BodyContent = () => (
       <Text className="text-black text-[24px] font-normal text-right p-0 my-[30px] mx-0">
         خوشحالیم که همراه مایی
       </Text>
-      <Text className="text-base">
+      <Text className="text-base text-right">
         یک متن درباره اینکه به روشن خوش آمدید و این چیزا! لورم ایپسوم متن ساختگی
         با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
         برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
         ابزارهای کاربردی می باشد.
       </Text>
-      <Section dir="ltr">
+      <Section dir="ltr" className="pt-2">
         <Link
           href="#"
-          className="bg-black py-2 px-4 text-white text-base rounded-[5px]"
+          className="bg-black pt-3 pb-4 px-4 text-white text-base rounded-[5px]"
         >
           بیشتر بدانید
         </Link>
@@ -139,8 +139,11 @@ export const AlefbaEmail = () => {
       <Tailwind>
         <Body className="bg-white my-auto mx-auto font-sans">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto w-[620px]">
-            <HeaderImage />
-            <BodyContent />
+            <Section className="relative">
+              <HeaderImage />
+              <BodyContent />
+            </Section>
+            <Section className="h-[400px]" />
             <Footer />
           </Container>
         </Body>
