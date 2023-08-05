@@ -23,10 +23,11 @@ const baseUrl = developementMode ? "/static/" : "https://alefba-ocr.ir/assets/";
 
 const HeaderImage = () => (
   <Section>
-    <Container className="border-t-[#F8BC45] h-[2px]" />
     <Img className="w-[85px]" src={`${baseUrl}roshan-logo_black.png`} />
   </Section>
 );
+
+const Header = () => <Img src={`${baseUrl}roshan-dark-logo.png`} alt="" />;
 
 const BodyContent = () => (
   <Section className="px-[65px] bg-transparent">
@@ -130,7 +131,10 @@ export const AlefbaEmail = () => {
         <Body className="w-full bg-white my-auto mx-auto font-sans">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto max-w-[620px] w-full">
             <HeaderImage />
-            <BodyContent />
+            <Section className="px-16">
+              <Header />
+              <BodyContent />
+            </Section>
             <Footer />
           </Container>
         </Body>

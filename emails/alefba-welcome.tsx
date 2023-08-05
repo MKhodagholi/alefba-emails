@@ -39,8 +39,8 @@ const HeaderImage = () => (
 );
 
 const BodyContent = () => (
-  <Section className="py-[45px] px-[65px] pb-[115px] bg-transparent">
-    <Section className="px-[40px] bg-white rounded-[5px]">
+  <Section className="w-full max-w-[620px] py-[45px] px-[65px] pb-[115px] bg-transparent">
+    <Section className="px-[40px] rounded-[5px]">
       <Heading className="text-black text-2xl font-normal text-right p-0 my-[30px] mx-0">
         خوش آمدید!
       </Heading>
@@ -67,7 +67,7 @@ const BodyContent = () => (
 );
 
 const Footer = () => (
-  <Container className="bg-black text-center pt-6">
+  <Section className="bg-black text-center pt-6">
     <Section className="w-[68px] mx-auto mb-[6px]">
       <Img className="w-[68px]" src={`${baseUrl}roshan-logo.png`} alt="" />
     </Section>
@@ -130,7 +130,7 @@ const Footer = () => (
         </Column>
       </Row>
     </Section>
-  </Container>
+  </Section>
 );
 
 export const AlefbaEmail = () => {
@@ -139,8 +139,8 @@ export const AlefbaEmail = () => {
       <Head />
       <Preview>پیام خوش آمدگویی تیم الفبا به کاربران محترم الفبا</Preview>
       <Tailwind>
-        <Body className="my-auto mx-auto font-sans bg-[#FCFCFC]">
-          <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto w-[620px]">
+        <Body className="w-full my-auto mx-auto font-sans " dir="rtl">
+          <Container className="w-full max-w-[620px] bg-[#FCFCFC] my-[40px] mx-auto">
             <HeaderImage />
             <BodyContent />
             <Footer />
