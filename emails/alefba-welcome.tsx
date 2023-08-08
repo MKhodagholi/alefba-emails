@@ -19,22 +19,11 @@ import * as React from "react";
 
 const developementMode = false;
 
-const baseUrl = developementMode ? "/static/" : "https://alefba-ocr.ir/assets/";
+const baseUrl = developementMode ? "/static/" : "https://alefba-ocr.ir/email/";
 
 const HeaderImage = () => (
-  <Section className="px-[40px] pt-[74px]">
-    <Section className="relative">
-      <Img
-        src={`${baseUrl}header-image.png`}
-        alt=""
-        className="w-full h-[200px] my-0 mx-auto rounded-[10px]"
-      />
-      <Img
-        src={`${baseUrl}roshan-logo.png`}
-        alt=""
-        className="absolute inset-0 m-auto w-[110px]"
-      />
-    </Section>
+  <Section className="px-[40px] pt-[44px]">
+    <Img src={`${baseUrl}header_banner-icon.png`} alt="" className="w-full" />
   </Section>
 );
 
